@@ -27,14 +27,17 @@ What are the steps required to install your project? Provide a step-by-step desc
 
 ## Usage 
 
-Provide instructions and examples for use. Include screenshots as needed.
+The best way to take some notes is to use [the live URL is deployed at Heroku](https://salty-hamlet-26969.herokuapp.com//)!
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+After you find yourself on the landing page, click on 'Get Started'!
 
-```md
-![alt text](assets/images/screenshot.png)
-```
+Click on the pencil icon to start writing a note. Click on the save icon to save it.
 
+Click on a note on the left to edit it! 
+
+As a bonus, I am working on creating a delete route to delete notes! We'll see if I get this done under the deadline! 
+
+[Note Taker in action](assets/images/screenshot.jpg)
 
 ## Credits
 
