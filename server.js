@@ -1,13 +1,44 @@
+const fs = require("fs");
+const path = require("path");
 const express = require('express');
-
 const PORT = process.env.PORT || 3001;
 const app = express();
-const notes = require('./db/db.json')
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+const { notes } = require('./db/db.json')
+const notesArray = notes;
+// const { getNotes, saveNote } = require('./public/assets/js/index')
 // const apiRoutes = require('./public/assets/js/index')
-app.get('/notes', (req, res) => {
+
+// function createNewNote(body, notesArray) {
+//     const note = body;
+//     notesArray.push(note);
+//     fs.writeFileSync(
+//         path.join(__dirname, './db/db.json'),
+//         JSON.stringify({ notes: notesArray }, null, 2)
+//     );
+//     return note;
+// }
+app.get('/api/notes', (req, res) => {
     let results = notes;
     res.json(results);
 });
+
+app.post('/api/notes', (req, res) => {
+    // req.body.id = notes.length.toString();
+    const note = req.body;
+    
+    console.log(req.body);
+
+    // const  = createNewNote(req.body, notes);
+    notesArray.push(note);
+    fs.writeFileSync(
+                path.join(__dirname, './db/db.json'),
+                JSON.stringify({ notes: notesArray }, null, 2)
+            );
+    res.json(note);
+});
+
 app.listen(PORT, () => {
     console.log(`Shh, this is a library. Listen on ${PORT}`);
 });
