@@ -37,7 +37,7 @@ Click on a note on the left to edit it!
 
 As a bonus, I am working on creating a delete route to delete notes! We'll see if I get this done under the deadline! 
 
-[Note Taker in action](assets/images/screenshot.jpg)
+![Note Taker in action](assets/images/screenshot.jpg)
 
 ## Credits
 
