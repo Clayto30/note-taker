@@ -25,7 +25,6 @@ app.get('/api/notes', (req, res) => {
     res.json(results);
 });
 
-// app.get('/api/:id')
 app.post('/api/notes', (req, res) => {
     // req.body.id = notes.length.toString();
     const note = req.body;
@@ -41,12 +40,17 @@ app.post('/api/notes', (req, res) => {
     res.json(note);
 });
 
+
+app.delete ('/api/:id', (req, res) => {
+    console.log('we gonna delete somethin');
+});
+
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './public/index.html'));
-})
+});
 app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, './public/notes.html'));
-})
+});
 app.listen(PORT, () => {
     console.log(`Shh, this is a library. Listen on ${PORT}`);
 });
