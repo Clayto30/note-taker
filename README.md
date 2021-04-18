@@ -2,10 +2,7 @@
 
 ## Description 
 
-You are askig yourself right now, "How can I take some notes?!?" Relax, I've got just the thing. your first note could even be, "Start Utilizing Clayton's Note Taking App."
-
-
-This project 
+You are asking yourself right now, "How can I take some notes?!?" Relax, I've got just the thing. Your first note could even be, "Start Utilizing Clayton's Note Taking App."
 
 Please vist my live [Note Taker URL](https://salty-hamlet-26969.herokuapp.com//).
 
@@ -22,8 +19,9 @@ If you would like to see my GitHub repository, go on and [check it out here](htt
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+If as a developer you want to clone my repository do so! You will need to install the Node JS package, as well as express. Once you've got those going you can run this thing from local host or use Insomnia.
 
+If you are going to just be a user, go ahead and head to the Usage section! :)
 
 ## Usage 
 
